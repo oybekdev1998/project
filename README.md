@@ -10,6 +10,8 @@
 * Head Hanter clone
 * Aviabooking
 * Check ticket
+* Udemy clone
+* Teaching platform
 
 
 # Tech stack
