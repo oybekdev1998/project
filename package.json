@@ -4,8 +4,9 @@
   "description": "* Spotify clone\r * VK clone\r * igaming.marketing/project/scores24/\r * Hemens clone\r * Avtobor clone\r * Uybor clone\r * OLX clone\r * Head Hanter clone\r * Aviabooking\r * Check ticket\r * Udemy clone\r * Teaching platform",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack serve --mode development",
-    "start": "webpack"
+    "serve": " webpack --mode development",
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,12 @@
     "@babel/preset-env": "^7.19.0",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",

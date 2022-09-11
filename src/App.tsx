@@ -1,10 +1,11 @@
 import React from "react";
 import './App.scss'
 
-export const App = () => {
+
+export const App: React.FC = ( ) => {
   return (
     <div>
-      <h1>App { new Date().toDateString }</h1>
+      <h1> App</h1>
     </div>
   )
 }
