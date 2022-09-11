@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "* Spotify clone\r * VK clone\r * igaming.marketing/project/scores24/\r * Hemens clone\r * Avtobor clone\r * Uybor clone\r * OLX clone\r * Head Hanter clone\r * Aviabooking\r * Check ticket\r * Udemy clone\r * Teaching platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oybekdev1998/project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oybekdev1998/project/issues"
+  },
+  "homepage": "https://github.com/oybekdev1998/project#readme"
+}
