@@ -16,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/oybekdev1998/project/issues"
   },
-  "homepage": "https://github.com/oybekdev1998/project#readme"
+  "homepage": "https://github.com/oybekdev1998/project#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2"
+  }
 }
