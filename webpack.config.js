@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development'
@@ -39,8 +40,22 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              additionalData: '@import "vars";',
+              sassOptions: {
+                includePaths: [path.resolve(__dirname, "src/styles")],
+              }
+            }
+          } 
         ]
+      },
+      {
+        test: /\.(jpg|jpeg|png|svg|gif|mp4)$/,
+          use: [{
+            loader: 'file-loader'
+          }]
       }
     ]
   },
@@ -53,6 +68,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.html')
-    })
-  ]
+    }),
+    new CleanWebpackPlugin(),
+  ],
+  optimization:{
+    minimize: false
+  }
 }
