@@ -1,12 +1,12 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const NODE_ENV = process.env.NODE_ENV;
-const IS_DEV = NODE_ENV === 'development'
+const IS_DEV = NODE_ENV === 'development';
 
 module.exports = {
-  mode: NODE_ENV ? NODE_ENV : 'development',
+  mode: NODE_ENV || 'development',
   entry: path.resolve(__dirname, './src/index.tsx'),
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -31,8 +31,7 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: [
-          'babel-loader',
-				  'ts-loader'
+          'babel-loader', 'ts-loader'
         ]
       },
       {
@@ -43,35 +42,33 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              additionalData: '@import "vars";',
-              sassOptions: {
-                includePaths: [path.resolve(__dirname, "src/styles")],
-              }
+              // additionalData: '@import "vars";',
+              // sassOptions: {
+              //   includePaths: [path.resolve(__dirname, "src")],
+              // }
             }
-          } 
+          }
         ]
       },
       {
         test: /\.(jpg|jpeg|png|svg|gif|mp4)$/,
-          use: [{
-            loader: 'file-loader'
-          }]
+        use: [{ loader: 'file-loader' }]
       }
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.scss'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src')
     }
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.html')
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
-  optimization:{
+  optimization: {
     minimize: false
   }
-}
+};

@@ -6,7 +6,9 @@
   "scripts": {
     "serve": " webpack --mode development",
     "start": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint src/**/*.tsx --ext .tsx",
+    "lint:fix": "eslint --fix src/**/*.tsx "
   },
   "repository": {
     "type": "git",
