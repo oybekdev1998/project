@@ -6,7 +6,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
+    'prettier',
+    'plugin:prettier/recommended'
   ],
   overrides: [
   ],
@@ -20,8 +22,13 @@ module.exports = {
     'react'
   ],
   rules: {
-    semi: ['off'],
+    indent: 'error',
+    semi: 'off',
     'react/jsx-no-bind': 'off',
-    'no-console': 'error'
+    'react/react-in-jsx-scope': 'warn',
+    'no-console': 'error',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/no-children-prop': ['warn', { allowFunctions: true || false }]
   }
-};
+}
