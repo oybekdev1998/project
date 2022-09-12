@@ -11,7 +11,8 @@
     "lint:fix": "eslint --fix src/**/*.tsx ",
     "prettier": "prettier --write",
     "prettier:check": "prettier --check",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint": "npx stylelint **/*.scss "
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,9 @@
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
     "ts-loader": "^9.3.1",
     "typescript": "^4.8.3",
     "webpack": "^5.74.0",
@@ -62,10 +66,10 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-        "npm run lint:fix"
+      "npm run lint:fix"
     ],
     "*.{ts,tsx,html}": [
-        "npm run prettier"
+      "npm run prettier"
     ]
   }
 }
