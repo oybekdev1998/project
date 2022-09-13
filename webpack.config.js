@@ -9,7 +9,7 @@ module.exports = {
   mode: NODE_ENV || 'development',
   entry: path.resolve(__dirname, './src/index.tsx'),
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './build'),
     filename: 'index.js'
   },
 

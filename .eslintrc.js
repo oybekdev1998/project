@@ -13,7 +13,6 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'prettier',
-    
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -25,13 +24,12 @@ module.exports = {
     'react',
   ],
   rules: {
-    indent: 'error',
-    semi: 'off',
     'react/jsx-no-bind': 'off',
     'react/react-in-jsx-scope': 'warn',
-    'no-console': 'error',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'react/no-children-prop': ['warn', { allowFunctions: true || false }]
+    'react/no-children-prop': ['warn', { allowFunctions: true || false }],
+    semi: ['error', 'never'],
   }
 }
