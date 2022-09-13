@@ -1,4 +1,9 @@
 module.exports = {
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   env: {
     browser: true,
     es2021: true
@@ -8,9 +13,7 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'prettier',
-    'plugin:prettier/recommended'
-  ],
-  overrides: [
+    
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -19,7 +22,7 @@ module.exports = {
     ecmaFeatures: { jsx: true }
   },
   plugins: [
-    'react'
+    'react',
   ],
   rules: {
     indent: 'error',
