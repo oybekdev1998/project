@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-  # This is a basic workflow to help you get started with Actions
-=======
-# This is a basic workflow to help you get started with Actions
->>>>>>> 366f12d45bc9fb8afa365824b42a2c5db5992618
-
 name: CI
 
 # Controls when the workflow will run
