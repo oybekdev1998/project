@@ -65,7 +65,7 @@
     "webpack-dev-server": "^4.11.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "npm run lint:fix"
     ]
   }
