@@ -3,9 +3,6 @@
 * Spotify clone
 * VK clone
 * igaming.marketing/project/scores24/
-* Hemens clone
-* Avtobor clone
-* Uybor clone
 * OLX clone
 * Head Hanter clone
 * Aviabooking
@@ -30,3 +27,8 @@
 
 ## React Folder Structure
 https://youtu.be/XEO3mFvrDx0
+![image](https://user-images.githubusercontent.com/83628117/191233332-5f0f034e-b34e-4dc9-9ac4-9169909289d7.png)
+![Uploading image.png…]()
+
+![image](https://user-images.githubusercontent.com/83628117/191233261-7c2550eb-1237-47f8-944d-851281ab5c3f.png)
+
