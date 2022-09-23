@@ -1,15 +1,5 @@
 # project
 
-* Spotify clone
-* VK clone
-* igaming.marketing/project/scores24/
-* OLX clone
-* Head Hanter clone
-* Aviabooking
-* Check ticket
-* Udemy clone
-* Teaching platform
-
 
 # Tech stack
 * Webpack | Vite
