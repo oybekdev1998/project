@@ -1,0 +1,35 @@
+.navbar {
+  background-color: transparent;
+}
+
+.navbar__items {
+  width: 1280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.navbar__item {  
+  color: #61aef2;
+  margin: 5px 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: all 250ms ease-in-out;
+}
+
+.navbar__item:nth-child(3) {
+  margin-right: auto;
+}
+.navbar__item:nth-child(1) {
+  border-bottom: 1px dashed #61aef2;
+}
+.navbar__item:nth-child(1):hover {
+  border-bottom: 1px dashed #e53e3e;
+}
+.navbar__item:hover {
+  color: #e53e3e;
+  
+}
+
+

@@ -1,4 +1,24 @@
 @import 'global';
 @import 'vars';
 
-@import './mixins/font-face'
+@import './mixins/font-face';
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: $content-width;
+}
