@@ -1,0 +1,17 @@
+.button {
+  background-color: transparent;
+  height: 40px;
+  position: relative;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-family: inherit;
+  line-height: 38px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 10  0ms ease-in-out;
+}
+
+.button:hover{
+  border: 1px solid rgba(163,218,165, .5);
+  border-color: #a3daa5;
+}
