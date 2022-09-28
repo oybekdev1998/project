@@ -1,9 +1,11 @@
-
+@import 'mixins/font-face';
   // base
-  $font-family: "Roboto", sans-serif;
-  $content-width: 960px;
+  $font-family: 'Roboto', sans-serif;
+  $content-width: 1280px;
   $container-offset: 15px;
   $container-width: calc($content-width + ($container-offset * 2));
+
+  
 
   // colors
   $color-white: #fff;
